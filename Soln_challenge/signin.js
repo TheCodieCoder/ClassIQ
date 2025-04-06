@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Example validation
-            if (username === "admin" && password === "1234") {
+            if (username === "User11" && password === "UserOnline") {
                 localStorage.setItem("loggedInUser", username); // Save username
                 
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } else {
                 alert("Invalid credentials!");
             }
