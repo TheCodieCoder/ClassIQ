@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+head, body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #eee7e7;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+}
+
+/* navbar1 */
+
+.navbar1 {
+    width: 100vw;
+    height: 6.5vh;
+    background-color: #5151de;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grade, .iq {
+    font-size: 2.3em;
+    color: #f1f1f1;
+
+}
+
+.grade {
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.iq {
+    font-size: 2.5em;
+    font-family: "Raleway";
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    margin-left: 3vw;
+}
+
+.part2 {
+    position: relative;
+    right: 5vw;
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.search-box {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 3vh;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    padding-left: 1vw;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.search-box:hover {
+    width: 25vw;
+}
+
+.search-icon {
+    width: 2.5vw;
+    height: 5vh;
+    background-color: #ffffff;
+    border: none;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8efdf2;
+}
+
+.search-icon:hover {
+    background-color: #a7eaf3;
+}
+
+.or {
+    color: #f1f1f1;
+}
+
+.sign {
+    border: none;
+    margin: 1vw;
+    height: 4.5vh;
+    width: 5vw;
+    border-radius: 1vh;
+    background-color: #aae8ff;
+    color: #010101;
+    font-size: 1em;
+}
+
+.sign:hover {
+    background-color: #89efe5;
+}
+
+.sign-anchor {
+    color: #010101;
+}
+
+.signed-in-box {
+    height: 6.5vh;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signed-in-line1 {
+    font-size: 0.9em;
+}
+
+.signed-in-line2 {
+    font-size: 1.2em;
+}
+
+/* navbar2 */
+
+.navbar2 {
+    width: 100vw;
+    height: 5.5vh;
+    background-color: #8892ff;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 5vw;
+    padding-left: 5vw;
+}
+
+.nav2-buttons {
+    color: #eee7e7;
+    font-size: 1.1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-nav {
+    color: #f9f9be;
+    font-size: 1.25em;
+}
+
+.nav2-buttons:hover {
+    font-size: 1.25em;
+    color: #f9f9be;
+}
+
+/* hero section */
+
+.hero-section {
+    height: 86vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #c8dcff 0%, #c8dcff 75%, #dcfdeb 100%);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    font-weight: 400;
+    color: #4141e7;
+    font-family: sans-serif;
+    position: relative;
+    left: 10vw;
+    top: 30vh;
+}
+
+.change {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #cc9c00;
+    transition: opacity 0.5s ease-in-out;
+    min-width: 16vw;
+    text-align: center;
+}
+
+.disp-pic {
+    background: url("teacher-removebg-preview.png");
+    background-size: cover;
+    border-bottom: 0.3vh double black;
+    height: 42vh;
+    width: 42vh;
+    /* border-radius: 50%; */
+    position: absolute;
+    right: 10vw;
+}
+
+/* About US */
+
+.container1 {
+    width: 100vw;
+    height: 100vh;
+    background: #dcfdeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.abt-txt {
+    height: 100vh;
+    width: 60vw;
+    /* position: relative; */
+    left: 40vw;
+}
+
+.about-us {
+    color: #7d88fe;
+    font-weight: 400;
+    font-size: 3.5em;
+    position: relative;
+    left: 20vw;
+    top: 6vh;
+    transition: all 1s ease-in-out;
+}
+
+.about-us:hover {
+    color: #5151de;
+}
+
+.abt-content {
+    color: #5151de;
+    font-size: 1.2em;
+    width: 55vw;
+    height: 70vh;
+    margin-top: 10vh;
+    text-align: justify;
+    margin-left: 2vw;
+}
+
+.pic2 {
+    position: relative;
+    top: 2vh;
+    height: 55vh;
+    width: 55vh;
+    background-image: url("student.png");
+    background-size: cover;
+    border-bottom: 0.3vh solid #010101;
+}
+
+/* footer */
+
+.footer {
+    height: 60vh;
+    width: 100vw;
+    border: none;
+    background: linear-gradient(to bottom, #dcfdeb 0%,#252525 0.5%, #252525 100%);
+    padding-top: 4vh;
+    /* display: flex; */
+    color: #a09f9f;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin-left: 35vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+.contact-head {
+    margin-top: 3vh;
+    margin-left: 4vw;
+    font-size: 1.3em;
+    width: fit-content;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-list {
+    height: max-content;
+    width: 20vw;
+    list-style: none;
+    margin-top: 6vh;
+    line-height: 5vh;
+}
+
+.fa-envelope:hover {
+    color: #ffd3cd;
+}
+
+.fa-linkedin:hover {
+    color: #95bee7;
+}
+
+.email-id, .profile-link {
+    color: #c0c0c0;
+    margin-left: 2vh;
+    font-size: 0.9em;
+}
+
+.service-container {
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.service-head {
+    font-size: 1.3em;
+}
+
+.services {
+    margin-left: 6vw;
+    list-style: circle;
+}
+

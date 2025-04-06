@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassIQ Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="part1">
+            <a href="home.html" class="home-icon">
+                <i class="fa-solid fa-house fa-2xl"></i>
+            </a>
+
+            <span class="greet">Welcome to ClassIQ!</span>
+            <div class="signin-container">
+                <span class="signin-text">Already have an account?</span>
+                <button class="signin" onclick="window.location.href='signin.html'">Sign In</button>
+            </div>
+        </div>
+
+        <div class="part2">
+                <span class="signup-text">Sign Up</span>
+            
+                <div class="signup-box">
+                    <div class="psnl">
+                        <span class="user-creds">Sign In Credentials</span>
+                        <div class="username-box  cred-box">
+                            <input type="text" class="first-name username cred" placeholder="First Name" required>
+                            <input type="text" class="last-name username cred" placeholder="Last Name(optional)">
+                        </div>
+    
+                        <div class="password-box cred-box">
+                            <input type="password" class="password cred" placeholder="Set Password" required>
+                            <input type="password" class="password cred" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <span class="contact-text">Contact Details</span>
+                        <div class="emailnphno">
+                            <input type="text" class="email cred" placeholder="Email" required>
+                            <input type="text" class="phno cred" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+
+                    <div class="select-container">
+                        <span class="other">Other</span>
+                        <div class="gender-box">
+                            <span class="gender-text">Gender: </span>
+                            <div class="select-box2">
+                                <select name="Gender" class="gender-select" required>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+    
+                            <div class="dob-box">
+                                <span class="dob-text">D.O.B</span>
+                                <input type="date" class="dob" required>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="signup-btn">
+                        <button class="signup">Sign Up<button>
+                    </div>
+
+                    <div class="signin-with-google">
+                        <span class="or">OR</span>
+                        <button class="google-sign"> 
+                            <i class="fa-brands fa-google fa-l"></i>
+                             Sign Up with Google</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

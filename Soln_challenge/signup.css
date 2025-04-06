@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Julius+Sans+One&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+head, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: #eee7e7;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+.part1 {
+    height: 100vh;
+    width: 40vw;
+    background-color: #7777f3;
+    border-radius: 30vh;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    flex-direction: column;
+    gap: 15vh;
+    padding: 2vh;
+    animation: slide 1s ease-out forwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+.home-icon {
+    color: #d5d5d5;
+    text-decoration: none;
+    position: absolute;
+    left: 1vw;
+    top: 3vh;
+}
+
+.home-icon:hover {
+    color: #f1f1f1;
+}
+
+.greet {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.signin-anchor {
+    color: #dbd9d9;
+    text-decoration: none;
+}
+
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.signin {
+    background-color: transparent;
+    border: 2px solid #f1f1f1;
+    height: 7vh;
+    width: 12vw;
+    border-radius: 5vh;
+    color: #f1f1f1;
+    transition: all 0.5s ease-in-out;
+    font-size: 1em;
+}
+
+.signin:hover {
+    background-color: #685aac;
+}
+
+/* part2 */
+
+.part2 {
+    /* background-color: #b1b1b1; */
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(100vw);
+    animation: slide-left 1s ease-out forwards 0.5s;
+}
+
+@keyframes slide-left {
+    to {
+        transform: translateX(0vw);
+    }
+    
+}
+
+.signup-text {
+    color: #111111;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+
+.signup-box {
+    margin-top: 2vh;
+    background-color: #edecec;
+    height: 80vh;
+    width: 50vw;
+    border: none;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cred {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 2vh;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 500;
+    border: 0.1vh solid #111111;
+}
+
+.cred-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.username {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+
+}
+
+.user-creds, .contact-text, .other {
+    font-size: 1.7em;
+    color: #7777f3;
+    font-weight: 500;
+}
+
+.contact-box {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.emailnphno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.select-box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dob-box, .gender-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.dob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vh;
+    height: 4vh;
+    border-radius: 1vh;
+    border: 0.1vw solid #111111;
+}
+
+.dob, .gender-select {
+    color: #5e5d5d;
+    font-weight: 500;
+}
+
+.dob-box {
+    margin-left: 10vw;
+}
+
+.gender-text {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.gender-select {
+    height: 4vh;
+    width: 6vw;
+    border: 0.1vh solid #111111;
+    border-radius: 1vh;
+    color: #5e5d5d;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.signin-with-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.google-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 1.1em;
+    background-color: #f5f5f5;
+    /* border: none; */
+    border: 0.2vh solid #222222;
+    margin-top: 2vh;
+    padding: 1.1vh;
+    gap: 1vw;
+    font-weight: 500;
+    color: #5e5d5d;
+    border-radius: 1vh;
+}
+
+.google-sign:hover {
+    color: #222222;
+}
+
+.or {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.fa-xl {
+    color: rgb(65, 65, 65);
+}
+
+.signup {
+    height: 7vh;
+    width: 12vw;
+    border-radius: 5vh;
+    border: none;
+    background-color: #7777f3;
+    color: #f1f1f1;
+    font-size: 1em;
+    transition: all 0.5s ease-in-out;
+    margin-top: 3vh;
+}
+
+.signup:hover {
+    background-color: #f1f1f1;
+    border: 0.2vh solid #7777f3;
+    color: #7777f3;
+}
