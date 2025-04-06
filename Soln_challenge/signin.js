@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Example validation
-            if (username === "User11" && password === "UserOnline") {
+            if (username === "User11" && password === "User11") {
                 localStorage.setItem("loggedInUser", username); // Save username
                 
                 window.location.href = "index.html";
